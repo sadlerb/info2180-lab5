@@ -39,7 +39,7 @@ if ($context != "cities"){
   <th>Head of State</th>
 </tr>";
 foreach ($results as $row):?>
-<tr><?= "<td>".$row['name']. "</td>" . "<td>" . $row['continent'] . "</td>" . "<td>" . $row['independence_year'] . "<td>" . $row['head_of_state']  ; ?></tr>
+<tr><?= "<td>".$row['name']. "</td>" . "<td>" . $row['continent'] . "</td>" . "<td>" . $row['independence_year'] . "</td>". "<td>" . $row['head_of_state']."</td>"; ?></tr>
 <?php endforeach;
 
   };?>
@@ -52,7 +52,7 @@ foreach ($results as $row):?>
   <th>Population</th>
 </tr>";
 foreach ($results as $row):?>
-<tr><?= "<td>".$row['name']. "</td>" . "<td>" . $row['district'] . "</td>" . "<td>" . $row['population'] . "<td>";?></tr>
+<tr><?= "<td>".$row['name']."</td>"."<td>". $row['district']."</td>"."<td>".$row['population']."</td>";?></tr>
 <?php endforeach;
 
   };?>
